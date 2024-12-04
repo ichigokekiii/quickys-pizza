@@ -554,6 +554,15 @@ video {
   display: none;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -584,6 +593,34 @@ video {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[92\%\] {
+  width: 92%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-\[4vw\] {
+  gap: 4vw;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-white {
@@ -646,6 +683,65 @@ video {
   --tw-gradient-to: #a6c1ee var(--tw-gradient-to-position);
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .font-\[Poppins\] {
   font-family: Poppins;
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#005200\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 82 0 / var(--tw-text-opacity, 1));
+}
+
+.hover\:bg-\[\]:hover {
+  background-color: ;
+}
+
+.hover\:bg-\[\#\]:hover {
+  background-color: #;
+}
+
+.hover\:bg-\[\#FF8416\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 132 22 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-\[\]:hover {
+  color: ;
+}
+
+.hover\:text-\[\#\]:hover {
+  color: #;
+}
+
+.hover\:text-\[\#FF8416\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 132 22 / var(--tw-text-opacity, 1));
 }
