@@ -567,6 +567,10 @@ video {
   height: 100vh;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -601,6 +605,50 @@ video {
 
 .w-\[92\%\] {
   width: 92%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-\[9\%\] {
+  width: 9%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[93\%\] {
+  width: 93%;
+}
+
+.w-\[94\%\] {
+  width: 94%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .items-center {
@@ -669,8 +717,36 @@ video {
   background-color: rgb(143 97 219 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\/p\] {
+  background-color: /p;
+}
+
+.bg-\[\/Pi\] {
+  background-color: /Pi;
+}
+
+.bg-\[\/Pictures\] {
+  background-color: /Pictures;
+}
+
+.bg-\[\/Pictures\/\] {
+  background-color: /Pictures/;
+}
+
+.bg-\[\/Pictures\/bg-overlay\.png\] {
+  background-color: /Pictures/bg-overlay.png;
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\/Pictures\/bg-overlay\.png\'\)\] {
+  background-image: url('/Pictures/bg-overlay.png');
+}
+
+.bg-\[url\(\"\/Pictures\/bg-overlay\.png\"\)\] {
+  background-image: url("/Pictures/bg-overlay.png");
 }
 
 .from-\[\#fbc2eb\] {
@@ -681,6 +757,10 @@ video {
 
 .to-\[\#a6c1ee\] {
   --tw-gradient-to: #a6c1ee var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .px-5 {
