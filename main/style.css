@@ -181,6 +181,14 @@ body {
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure full width */
+  z-index: 10; /* Set higher z-index for stacking */
+}
+
 
 hr {
   height: 0;
