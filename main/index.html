@@ -6,52 +6,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quicky's Pizza</title>
     <link rel="stylesheet" href="style.css">
-    <!--Font ng ina mo-->
+    <script src="script.js"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!--FOR TAILWIND:
     to load tailwind in terminal => npm run dev
     ctrl + c => end terminal-->
 </head>
 
-<body class="font-[Poppins] bg-black h-screen">
-    <div>
-        <header class="bg-[#005200]">
-            <nav class="flex justify-between items-center w-[92%] mx-auto">
-                <div>
-                    <img class="w-32" src="/Pictures/Web Logo.png" alt="Quicky's Pizza">
+<body class="font-[Poppins] bg-cover bg-center h-screen">
+<!-- Header -->
+<div class="z-10 sticky top-0">
+    <header class="bg-[#005200] shadow-md">
+        <nav class="flex justify-between items-center w-[92%] mx-auto h-20">
+            <div>
+                <img class="w-32" src="/Pictures/Web Logo.png" alt="Quicky's Pizza Logo">
+            </div>
+            <ul class="flex items-center gap-[4vw] text-white font-semibold">
+                <li><a class="hover:text-[#FF8416]" href="#">Home</a></li>
+                <li><a class="hover:text-[#FF8416]" href="#">About</a></li>
+                <li><a class="hover:text-[#FF8416]" href="#">Menu</a></li>
+                <li><a class="hover:text-[#FF8416]" href="#">Location</a></li>
+                <li><a class="hover:text-[#FF8416]" href="#">Reservations</a></li>
+            </ul>
+            <button class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">
+                Order Now
+            </button>
+        </nav>
+    </header>
+</div>
+    
+    
+<div class="-z-10 pt-16">
+    <!-- Carousel Section -->
+    <section class="px-6 py-8 bg-[#dbdbdb]" style="background-image: url(/Pictures/PIZZA-BACKGROUNDCOPY.png);">
+        <div id="carousel" class="relative mx-auto max-w-5xl overflow-hidden rounded-lg py-6">
+            <div class="relative h-72 md:h-[450px] z-0 py-6">
+                <div class="absolute inset-0 transition-transform transform translate-x-0 duration-1000 py-6" data-carousel-item="active">
+                    <img src="/Pictures/thin-pizza.jpg" alt="Slide 1" class="w-full h-full object-scale-down">
                 </div>
-                <div class="">
-                    <ul class="flex items-center gap-[4vw]">
-                        <li>
-                            <a class="hover:text-[#FF8416]" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#FF8416]" href="#">About</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#FF8416]" href="#">Menu</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#FF8416]" href="#">Location</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#FF8416]" href="#">Reservations</a>
-                        </li>
-                    </ul>
+                <div class="absolute inset-0 transition-transform transform translate-x-full duration-1000" data-carousel-item>
+                    <img src="/Pictures/party-square.jpg" alt="Slide 2" class="w-full h-full object-scale-down">
                 </div>
-                <div>
-                    <button class="bg-white text-[#005200] px-3 py-3 rounded-full hover:bg-[#FF8416]">Order Now</button>
+                <div class="absolute inset-0 transition-transform transform -translate-x-full duration-1000" data-carousel-item>
+                    <img src="/Pictures/burgir.jpg" alt="Slide 3" class="w-full h-full object-scale-down">
                 </div>
-            </nav>
-        </header>
+            </div>
+            <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-10 h-10 flex items-center justify-center z-0" data-carousel-prev>
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-10 h-10 flex items-center justify-center z-0" data-carousel-next>
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <button class="w-3 h-3 rounded-full bg-gray-300" data-carousel-indicator></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300" data-carousel-indicator></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300" data-carousel-indicator></button>
+            </div>
+        </div>
+    </section>
 
-        <img class="w-auto mx-auto" src="/Pictures/bg-overlay.png">
+    <!-- Menu Section -->
+    <section class="bg-white flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-14 z-0" >
+        <!-- Left Column (Text Content) -->
+        <div class="relative flex-1">
+            <div class="  p-8 space-y-6 text-center">
+                <!-- Heading -->
+                <h2 class="text-4xl font-bold" style="font-size: 44px;">Our Menu</h2>
+                <p class="text-lg text-gray-700" style="font-size: 16px;">
+                 <!--TEXT DESCIRPTION--> 
+                 Check out our menu with more than 60 food choices to serve your cravings!  
+                </p>
+                <a href="/menus"
+                    class="inline-block px-6 py-3 bg-white text-[#005200] font-semibold rounded-full border border-[#005200] hover:bg-[#005200] hover:text-orange-500 transition shadow-md">
+                    View Menus
+                </a>
+            </div>
+        </div>  
+    
+        <!-- Right Column (Image) -->
+        <div class="flex-1 bg-cover bg-center rounded-lg shadow-lg md:h-[450px] h-[300px] z-0 overflow-visible"
+             style="background-image: url('/Pictures/pizza-landing-page.jpg');"
+             role="img" aria-label="A close-up of a pizza">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="bg-[#131318] flex flex-col md:flex-row items-center justify-center gap-8 px-6 py-14 min-h-[462px]" style="background-image: url(/Pictures/PIZZA-BACKGROUNDCOPY.png);">
+        <div class="flex-1 flex justify-center items-center">
+            <div class="space-y-6 text-center">
+                <h2>
+                    <a href="#" 
+                       class="inline-block px-6 py-3 bg-orange-500 text-white font-semibold rounded hover:bg-[#005200] transition">
+                        About Us
+                    </a>
+                </h2>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Location Section -->
+<!-- Location Section -->
+<section class="bg-white flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-14 border-spacing-4" style="background-image: url(/Pictures/PIZZA-BACKGROUNDCOPY.png);">
+    <!-- Left Column Image) -->
+    <div class="flex-1 bg-cover bg-center rounded-lg shadow-lg md:h-[450px] h-[300px] z-0"
+         style="background-image: url('/Pictures/pizza-landing-page.jpg');"
+         role="img" aria-label="A close-up of a pizza">
     </div>
+
+    <!-- Right Column (Text Content) -->
+    <div class="relative flex-1">
+        <div class="p-8 space-y-6 text-center md:text-left">
+            <!-- Heading -->
+            <h2 class="text-4xl font-bold" style="font-size: 44px;">Our Location</h2>
+            <p class="text-lg text-gray-700" style="font-size: 16px;">
+                <!--TEXT DESCRIPTION-->
+                Visit us and enjoy the delicious flavors of our pizzas at our cozy restaurant!
+            </p>
+            <a href="/location"
+                class="inline-block px-6 py-3 bg-white text-[#005200] font-semibold rounded-full border border-[#005200] hover:bg-[#005200] hover:text-orange-500 transition shadow-md">
+                View Location
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!--Reservations-->
+    <section class="bg-[#131318] flex flex-col md:flex-row items-center justify-center gap-8 px-6 py-14 min-h-[462px]" style="background-image: url(/Pictures/PIZZA-BACKGROUNDCOPY.png);">
+        <div class="flex-1 flex justify-center items-center">
+            <div class="space-y-6 text-center">
+                <h2>
+                    <a href="#" 
+                       class="inline-block px-6 py-3 bg-orange-500 text-white font-semibold rounded hover:bg-orange-600 transition">
+                        Reservations
+                    </a>
+                </h2>
+            </div>
+        </div>
+    </section>
+</div>
+    
 </body>
 
+<footer class="bg-[#005200] text-white py-4 text-center">
+    <div class="flex items-center justify-center gap-6 mb-4">
+        <div class="flex items-center gap-4">
+            <a href="#" class="inline-block">
+                <img src="/Pictures/fb-cin.png" alt="Facebook" class="w-8 h-8">
+            </a>
+            <a href="#" class="inline-block">
+                <img src="/Pictures/mess-icon.png" alt="Messenger" class="w-8 h-8">
+            </a>
+        </div>
+        
+        <div class="flex items-center gap-4 text-sm font-medium">
+            <a href="#about" class="hover:underline">ABOUT</a>
+            <span>•</span>
+            <a href="#location" class="hover:underline">LOCATION</a>
+            <span>•</span>
+            <a href="#contact" class="hover:underline">CONTACT US</a>
+        </div>
+    </div>
+    <p class="text-sm mt-4">
+        Copyright © 2024 Quicky's Pizza. All Rights Reserved
+    </p>
+</footer>
+
+
 </html>
-
-
-
