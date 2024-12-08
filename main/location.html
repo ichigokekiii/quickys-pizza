@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicky's Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+
+<body class="font-[Poppins] bg-cover bg-center h-screen" style="background-image: url('/Pictures/bg-image-pizza.png');">
+    <!-- Header -->
+    <header class="bg-[#005200] sticky top-0 z-50">
+        <nav class="flex justify-between items-center w-[92%] mx-auto h-28">
+            <div>
+                <img class="w-32" src="/Pictures/Web Logo.png" alt="Quicky's Pizza Logo">
+            </div>
+            <ul class="flex items-center gap-[4vw] text-white font-semibold">
+                <li><a class="hover:text-[#FF8416]" href="index.html">Home</a></li>
+                <li><a class="hover:text-[#FF8416]" href="about.html">About</a></li>
+                <li><a class="hover:text-[#FF8416]" href="#">Menu</a></li>
+                <li><a class="hover:text-[#FF8416]" href="#">Location</a></li>
+                <li><a class="hover:text-[#FF8416]" href="#">Reservations</a></li>
+            </ul>
+            <button class="bg-white text-[#005200] px-3 py-3 rounded-full hover:bg-[#FF8416]">Order Now</button>
+        </nav>
+    </header>
+
+    <div class="w-screen h-screen justify-center items-center relative flex" style="background-image: url(/Pictures/PIZZA-BACKGROUNDCOPY.png);">
+        <div class="h-40 w-96 rounded-md bg-[#005200] flex justify-center items-center absolute top-1/4">
+            <h1 class="inline-flex items-center bg-[#005200] text-white text-4xl font-bold">VISIT US</h1>
+        </div>
+        <div class="h-80 rounded-md bg-white flex flex-col justify-center items-center p-8" style="width: 1200px; margin-top: 8rem;">
+            <h2 class="text-[#005200] mb-4 text-center font-bold">
+                READY TO SERVE YOU
+            </h2>
+            <h3 class="text-black text-center">
+                20 De Julio St. Poblacion 38 Infanta Quezon <br> <br>
+            </h3>
+            <h3 class="text-black text-center">
+                Open 7 days a week <br> 
+                8:00AM - 7:30AM
+            </h3>
+        </div>
+    </div>
+
+    <section class="bg-black flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-14 z-0" >
+        <!-- Left Column (Text Content) -->
+        <div class="relative flex-1">
+            <div class="  p-8 space-y-6 text-center">
+                <!-- Heading -->
+                <h2 class="text-4xl font-bold text-[#005200]" style="font-size: 44px;">CONTACT US</h2>
+                <p class="text-lg text-white" style="font-size: 16px;">
+                 <!--TEXT DESCIRPTION--> 
+                 0969-603-2688 <br>
+                 0928-984-0450 <br>
+                 (042) 535-2999                 </p>
+            </div>
+        </div>  
+    </section>
+
+    <section class="bg-white flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-14 border-spacing-4">
+    <!-- Left Column (Responsive Map) -->
+    <div class="flex-1 bg-cover bg-center rounded-lg shadow-lg z-0">
+        <!-- Responsive Container for the Map -->
+        <div class="relative w-full h-0" style="padding-bottom: 56.25%; /* 16:9 Aspect Ratio */">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.4251762324902!2d121.64518647502994!3d14.745059773523682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339829004c054da7%3A0xb81eb24398d7fcb!2sQuicky&#39;s%20Pizza!5e0!3m2!1sen!2sph!4v1733637776061!5m2!1sen!2sph" 
+                class="absolute top-0 left-0 w-full h-full" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Right Column (Text Content) -->
+    <div class="relative flex-1">
+        <div class="p-8 space-y-6 text-center">
+            <a href="https://maps.app.goo.gl/mxxLj3UsRVKpZGxu8"
+               class="inline-block px-4 py-2 md:px-6 md:py-3 bg-white text-[#005200] text-sm md:text-base font-semibold rounded-full border border-[#005200] hover:bg-[#005200] hover:text-orange-500 transition shadow-md">
+                GET DIRECTIONS
+            </a>
+        </div>
+    </div>
+</section>
+    
+
+
+    <!--FOOTER-->
+    <footer class="bg-[#005200] text-white py-4 text-center">
+        <div class="flex items-center justify-center gap-6 mb-4">
+            <div class="flex items-center gap-4">
+                <a href="#" class="inline-block">
+                    <img src="/Pictures/fb-cin.png" alt="Facebook" class="w-8 h-8">
+                </a>
+                <a href="#" class="inline-block">
+                    <img src="/Pictures/mess-icon.png" alt="Messenger" class="w-8 h-8">
+                </a>
+            </div>
+            
+            <div class="flex items-center gap-4 text-sm font-medium">
+                <a href="#about" class="hover:underline">ABOUT</a>
+                <span>•</span>
+                <a href="#location" class="hover:underline">LOCATION</a>
+                <span>•</span>
+                <a href="#contact" class="hover:underline">CONTACT US</a>
+            </div>
+        </div>
+        <p class="text-sm mt-4">
+            Copyright © 2024 Quicky's Pizza. All Rights Reserved
+        </p>
+    </footer>
+    
+
+</body>
+</html>
