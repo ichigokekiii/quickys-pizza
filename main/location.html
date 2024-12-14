@@ -14,24 +14,30 @@
     <script src="script.js"></script>
 </head>
 
-<body class="font-[Poppins] bg-cover bg-center h-screen" style="background-image: url('/Pictures/bg-image-pizza.png');">
+<body class="font-[Poppins] bg-cover bg-center" style="background-image: url('/Pictures/bg-image-pizza.png');">
     <!-- Header -->
-    <header class="bg-[#005200] sticky top-0 z-50">
-        <nav class="flex justify-between items-center w-[92%] mx-auto h-28">
-            <div>
-                <img class="w-32" src="/Pictures/Web Logo.png" alt="Quicky's Pizza Logo">
-            </div>
-            <ul class="flex items-center gap-[4vw] text-white font-semibold">
-                <li><a class="hover:text-[#FF8416]" href="index.html">Home</a></li>
-                <li><a class="hover:text-[#FF8416]" href="about.html">About</a></li>
-                <li><a class="hover:text-[#FF8416]" href="menu.html">Menu</a></li>
-                <li><a class="hover:text-[#FF8416]" href="location.html">Location</a></li>
-                <li><a class="hover:text-[#FF8416]" href="#">Reservations</a></li>
-            </ul>
-            <button class="bg-white text-[#005200] px-3 py-3 rounded-full hover:bg-[#FF8416]">Order Now</button>
-        </nav>
-    </header>
+    <div class="z-10 sticky top-0">
+        <header class="bg-[#005200] shadow-md z-10">
+            <nav class="flex justify-between items-center w-[92%] mx-auto h-20 z-10">
+                <div>
+                    <img class="w-32" src="/Pictures/Web Logo.png" alt="Quicky's Pizza Logo">
+                </div>
+                <ul class="flex items-center gap-[4vw] text-white font-semibold">
+    
+                    <li><a class="hover:text-[#FF8416]" href="index.html">Home</a></li>
+                    <li><a class="hover:text-[#FF8416]" href="about.html">About</a></li>
+                    <li><a class="hover:text-[#FF8416]" href="menu.html">Menu</a></li>
+                    <li><a class="hover:text-[#FF8416]" href="location.html">Location</a></li>
+                    <li><a class="hover:text-[#FF8416]" href="#">Reservations</a></li>
+                </ul>
+                <button class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">
+                    Order Now
+                </button>
+            </nav>
+        </header>
+    </div>
 
+    <div class="z-0">
     <div class="w-screen h-screen justify-center items-center relative flex" style="background-image: url(/Pictures/PIZZA-BACKGROUNDCOPY.png);">
         <div class="h-40 w-96 rounded-xl bg-[#005200] flex justify-center items-center absolute top-1/4">
             <h1 class="inline-flex items-center bg-[#005200] text-white text-4xl font-bold">VISIT US</h1>
@@ -91,6 +97,7 @@
         </div>
     </div>
 </section>
+</div>
     
 
 
