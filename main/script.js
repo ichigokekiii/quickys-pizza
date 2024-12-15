@@ -71,3 +71,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateActiveSlide(currentIndex);
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.getElementById('menuButton');
+    const menuDropdown = document.getElementById('menuDropdown');
+    const closeButton = document.getElementById('closeButton');
+
+    const openMenu = () => {
+        menuDropdown.classList.remove('hidden');
+        menuDropdown.classList.add('flex');
+
+        // Animate borgir
+        const lines = menuButton.querySelectorAll('span');
+        lines[0].classList.add('transform', 'rotate-45', 'translate-y-2');
+        lines[1].classList.add('opacity-0');
+        lines[2].classList.add('transform', '-rotate-45', '-translate-y-2');
+    };
+
+    const closeMenu = () => {
+        menuDropdown.classList.add('hidden');
+        menuDropdown.classList.remove('flex');
+
+        // borgir animation back 2 reality
+        const lines = menuButton.querySelectorAll('span');
+        lines[0].classList.remove('transform', 'rotate-45', 'translate-y-2');
+        lines[1].classList.remove('opacity-0');
+        lines[2].classList.remove('transform', '-rotate-45', '-translate-y-2');
+    };
+
+    // Borgir
+    menuButton.addEventListener('click', () => {
+        const isOpen = menuDropdown.classList.contains('hidden');
+        if (isOpen) {
+            openMenu();
+        } else {
+            closeMenu();
+        }
+    });
+    closeButton.addEventListener('click', closeMenu);
+});
