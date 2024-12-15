@@ -182,9 +182,16 @@ body {
 3. Ensure horizontal rules are visible by default.
 */
 #closeButton {
+  font-size: 4rem; /* Bigger size */
   cursor: pointer;
   font-weight: bold;
-  size: 50px;
+  transform: scale(1); /* Default scale */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#closeButton:hover {
+  color: #FF8416; /* Change color on hover */
+  transform: scale(1.2) rotate(15deg); /* Grow and rotate slightly */
 }
 
 hr {
