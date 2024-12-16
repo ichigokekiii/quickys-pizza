@@ -111,3 +111,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     closeButton.addEventListener('click', closeMenu);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const numberOfPeople = document.getElementById("numberOfPeople");
+    const dateOfBooking = document.getElementById("dateOfBooking");
+
+    // Create error message containers
+    const peopleError = document.createElement("p");
+    const dateError = document.createElement("p");
+
+    // Add red color styling for error messages
+    peopleError.className = "text-red-500 text-sm mt-1";
+    dateError.className = "text-red-500 text-sm mt-1";
+
+    form.addEventListener("submit", function (e) {
+        // Clear previous error messages
+        peopleError.textContent = "";
+        dateError.textContent = "";
+        numberOfPeople.classList.remove("border-red-500");
+        dateOfBooking.classList.remove("border-red-500");
+
+        let valid = true;
+
+        // Validate "Number of People"
+        if (!numberOfPeople.value) {
+            numberOfPeople.classList.add("border-red-500");
+            peopleError.textContent = "Please select the number of people.";
+            numberOfPeople.parentNode.appendChild(peopleError);
+            valid = false;
+        }
+
+        // Validate "Date of Booking"
+        if (!dateOfBooking.value) {
+            dateOfBooking.classList.add("border-red-500");
+            dateError.textContent = "Please select a booking date.";
+            dateOfBooking.parentNode.appendChild(dateError);
+            valid = false;
+        }
+
+        // If any validation fails, prevent form submission
+        if (!valid) {
+            e.preventDefault();
+        }
+    });
+});
