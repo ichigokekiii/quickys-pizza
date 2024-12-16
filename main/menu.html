@@ -10,9 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!--FOR TAILWIND:
-    to load tailwind in terminal => npm run dev
-    ctrl + c => end terminal-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
 </head>
 
 <body class="font-[Poppins] bg-cover bg-center">
@@ -32,6 +31,9 @@
                     <li><a class="hover:text-[#FF8416]" href="location.html">Location</a></li>
                     <li><a class="hover:text-[#FF8416]" href="#">Reservations</a></li>
                 </ul>
+                <button class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">
+                    Order Now
+                    </button>
                 <!-- Borgir -->
                 <button id="menuButton" class="md:hidden flex flex-col justify-between w-8 h-8 focus:outline-none">
                     <span class="block w-full h-1 bg-white transition-transform"></span>
