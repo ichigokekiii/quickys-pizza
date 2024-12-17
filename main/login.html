@@ -15,22 +15,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="login.js"></script>
 </head>
-<body>
+<body class="font-[Poppins] bg-gray-400 bg-center flex justify-center items-center min-h-[100vh]">
 
-    <div class="container">
-        <div id="form-box login" class="container flex">
-            <form>
+    <div class="container bg-white shadow-lg relative rounded-[30px] w-[850px] h-[550px]">
+        <!--form-box login-->
+        <div class="absolute flex items-center text-center text-[#131318] right-0 w-[50%] h-[100%] bg-green-600">
+            <form class="w-[100%]">
                 <!--Login-->
-                <h1>Login</h1>
-                <div>
-                    <input type="text" placeholder="Username" required>
-                    <i class='bx bxs-user'></i>
+                <h1 class="font-bold text-[36px] -m-[10px] my-0">
+                    Login
+                </h1>
+                <div class="relative m-[30px]">
+                    <input class="placeholder-gray-400 text-base rounded-[8px] outline-none border-none w-[100%] pl-[13px] pr-[50px] pt-[13px] pb-[16px] bg-white text-[13px] text-[#131318] font-medium" type="text" placeholder="Username" required>
+                    <i class='bx bxs-user absolute text-[#131318] text-[20px] right-5 top-[50%] -translate-y-[50%]'></i>
                 </div>
                 <!--Password-->
-                <h1>Password</h1>
-                <div>
-                    <input type="text" placeholder="Password" required>
-                    <i class='bx bxs-lock-alt'></i>
+                <div class="relative m-[30px]">
+                    <input class="placeholder-gray-400 text-base rounded-[8px] outline-none border-none w-[100%] pl-[13px] pr-[50px] pt-[13px] pb-[16px] bg-white text-[13px] text-[#131318] font-medium" type="text" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt absolute text-[#131318] text-[20px] right-5 top-[50%] -translate-y-[50%]'></i>
                 </div>
                 <!--Forgot link-->
                 <div class="">
