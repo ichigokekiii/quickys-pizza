@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicky's Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Script-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div id="form-box login" class="container flex">
+            <form>
+                <!--Login-->
+                <h1>Login</h1>
+                <div>
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <!--Password-->
+                <h1>Password</h1>
+                <div>
+                    <input type="text" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <!--Forgot link-->
+                <div class="">
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit">Login</button>
+                <!--Break Line-->
+                <p id="line-container" class="mx-8">
+                    <span id="line" class="inline-block bg-black h-0.5 w-12 align-middle"></span>
+                        <span id="text" class="align-middle inline-block py-2">OR</span>
+                    <span id="line" class="inline-block bg-black h-0.5 w-12 align-middle"></span>
+                </p>
+                <!--Socials ng ina mo-->
+                <div class="">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-apple'></i></a>                
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
