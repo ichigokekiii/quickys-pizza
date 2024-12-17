@@ -1,10 +1,15 @@
-/*Pass through line*/ 
-document.addEventListener("DOMContentLoaded", function () {
+const container = document.getElementById('container');
+const togRegisterBtn = document.getElementById('toggle-register-bt');
+const togLoginBtn = document.getElementById('toggle-login-bt');
+
+/*Resolution Adaptive Break Line*/ 
+//di ko mapagana
+/*document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("line-container");
     const lines = container.querySelectorAll("#line");
     const text = container.querySelector("#text");
     
-    /*Adjustable Line*/
+    /*Adjustable Line
     function adjustLineWidth() {
         const parentWidth = container.parentElement.offsetWidth;
         const textWidth = text.offsetWidth;
@@ -20,4 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
     adjustLineWidth();
 
     window.addEventListener("resize", adjustLineWidth);
-});
+});*/

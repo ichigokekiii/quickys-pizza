@@ -17,7 +17,7 @@
 </head>
 <body class="font-[Poppins] bg-gray-400 bg-center flex justify-center items-center min-h-[100vh]">
 
-    <div class="container bg-white shadow-lg relative rounded-[30px] w-[850px] h-[570px] <!--overflow-hidden-->">
+    <div id="container" class="container bg-white shadow-lg relative rounded-[30px] w-[850px] h-[570px] <!--overflow-hidden-->">
         <!--form-box login-->
         <div class="absolute flex items-center text-center z-10 text-[#131318] right-0 w-[50%] p-[30px] h-[100%]">
             <form action="" class="w-[100%]">
@@ -99,14 +99,14 @@
                 <h1 class="font-bold text-[36px] -my-[10px] mx-0">Hello, Welcome!</h1>
                 <p class="m-[20px]">Don't have an account?</p>
                 <!--Register buttn 2-->
-                <button class="bg-transparent cursor-pointer text-base text-[16px] border-2 border-white text-[white] rounded-[8px] w-[160px] h-[46px]">Register</button>
+                <button id="toggle-register-btn" class="bg-transparent cursor-pointer text-base text-[16px] border-2 border-white text-[white] rounded-[8px] w-[160px] h-[46px]">Register</button>
             </div>
             <!--Toggle Right panel-->
             <div class="absolute flex z-20 flex-col -right-[50%] justify-center items-center w-[50%] h-[100%] text-white">
                 <h1 class="font-bold text-[36px] -my-[10px] mx-0">Welcome Back!</h1>
                 <p class="m-[20px]">Already have an account?</p>
-                <!--Register buttn 2-->
-                <button class="bg-transparent cursor-pointer text-base text-[16px] border-2 border-white text-[white] rounded-[8px] w-[160px] h-[46px]">Login</button>
+                <!--Login buttn 2-->
+                <button id="toggle-login-btn" class="bg-transparent cursor-pointer text-base text-[16px] border-2 border-white text-[white] rounded-[8px] w-[160px] h-[46px]">Login</button>
             </div>
         </div>
         
