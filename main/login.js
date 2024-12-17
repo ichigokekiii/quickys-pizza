@@ -1,6 +1,19 @@
 const container = document.getElementById('container');
-const togRegisterBtn = document.getElementById('toggle-register-bt');
-const togLoginBtn = document.getElementById('toggle-login-bt');
+const togRegisterBtn = document.getElementById('toggle-register-btn');
+const togLoginBtn = document.getElementById('toggle-login-btn');
+
+togRegisterBtn.addEventListener('click', () => {
+    container.classList.add('active');
+
+});
+
+togLoginBtn.addEventListener('click', () => {
+    container.classList.remove('active');
+
+});
+
+
+
 
 /*Resolution Adaptive Break Line*/ 
 //di ko mapagana

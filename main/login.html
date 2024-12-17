@@ -13,13 +13,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--Script-->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="login.js"></script>
 </head>
 <body class="font-[Poppins] bg-gray-400 bg-center flex justify-center items-center min-h-[100vh]">
 
-    <div id="container" class="container bg-white shadow-lg relative rounded-[30px] w-[850px] h-[570px] <!--overflow-hidden-->">
+    <div id="container" class="container bg-white shadow-lg relative rounded-[25px] w-[850px] h-[570px] <!--overflow-hidden-->">
         <!--form-box login-->
-        <div class="absolute flex items-center text-center z-10 text-[#131318] right-0 w-[50%] p-[30px] h-[100%]">
+        <div id="form-box-log" class="bg-white rounded-[25px] absolute z-1 flex items-center text-center text-[#131318] right-0 w-[50%] p-[30px] h-[100%] ease-in-out duration-[0.8s] delay-[0.7s]">
             <form action="" class="w-[100%]">
                 <!--Login-->
                 <h1 class="font-bold text-[36px] -my-[10px] mx-0">
@@ -56,7 +55,7 @@
         </div>
 
         <!--form-box register-->
-        <div class="invisible absolute flex items-center text-center z-10 text-[#131318] right-0 w-[50%] p-[30px] h-[100%]">
+        <div id="form-box-reg" class="invisible bg-white rounded-[25px] absolute z-2 flex items-center text-center text-[#131318] right-0 w-[50%] p-[30px] h-[100%] ease-in-out duration-[0.8s] delay-[0.7s]">
             <form action="" class="w-[100%]">
                 <!--Register-->
                 <h1 class="font-bold text-[36px] -my-[10px] mx-0">
@@ -93,24 +92,25 @@
         </div>
 
         <!--Toggle Box-->
-        <div class="absolute w-[100%] h-[100%] before:rounded-[150px] before:z-20 before:left-[-250%] before:content-[''] before:absolute before:w-[300%] before:h-[100%] before:bg-black">
+        <div id="toggle-box" class="absolute w-[100%] h-[100%] before:ease-in-out before:duration-[1.4s] before:rounded-[150px] before:z-20 before:left-[-250%] before:content-[''] before:absolute before:w-[300%] before:h-[100%] before:bg-transparent">
             <!--Toggle Left panel-->
-            <div class="absolute flex z-20 flex-col justify-center items-center w-[50%] h-[100%] text-white">
+            <div id="toggle-left-panel" class="absolute flex z-20 flex-col justify-center items-center w-[50%] h-[100%] left-0 text-white ease-in-out duration-[0.6s] delay-[0.7s]">
                 <h1 class="font-bold text-[36px] -my-[10px] mx-0">Hello, Welcome!</h1>
                 <p class="m-[20px]">Don't have an account?</p>
                 <!--Register buttn 2-->
-                <button id="toggle-register-btn" class="bg-transparent cursor-pointer text-base text-[16px] border-2 border-white text-[white] rounded-[8px] w-[160px] h-[46px]">Register</button>
+                <button id="toggle-register-btn" class="bg-orange-400 shadow-lg cursor-pointer text-base text-[16px] text-[white] rounded-[8px] w-[160px] h-[46px]">Register</button>
             </div>
             <!--Toggle Right panel-->
-            <div class="absolute flex z-20 flex-col -right-[50%] justify-center items-center w-[50%] h-[100%] text-white">
+            <div id="toggle-right-panel" class="absolute flex z-20 flex-col -right-[50%] justify-center items-center w-[50%] h-[100%] text-white ease-in-out duration-[0.6s] delay-[0.3s]">
                 <h1 class="font-bold text-[36px] -my-[10px] mx-0">Welcome Back!</h1>
                 <p class="m-[20px]">Already have an account?</p>
                 <!--Login buttn 2-->
-                <button id="toggle-login-btn" class="bg-transparent cursor-pointer text-base text-[16px] border-2 border-white text-[white] rounded-[8px] w-[160px] h-[46px]">Login</button>
+                <button id="toggle-login-btn" class="bg-orange-400 shadow-lg cursor-pointer text-base text-[16px] text-[white] rounded-[8px] w-[160px] h-[46px]">Login</button>
             </div>
         </div>
         
     </div>
-    
+
+<script src="login.js"></script>
 </body>
 </html>

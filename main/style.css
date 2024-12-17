@@ -1386,3 +1386,29 @@ video {
     text-align: left;
   }
 }
+
+#container.active #toggle-box::before {
+  left: 50%;
+}
+
+#container.active #toggle-left-panel {
+  left: -50%;
+  transition-delay: .3s;
+}
+
+#container.active #toggle-right-panel {
+  right: 0;
+  transition-delay: .7s;
+}
+
+
+#container.active #form-box-reg {
+  right: 50%;
+  visibility: visible;
+
+}
+
+#container.active #form-box-log {
+  right: 50%;
+
+}
