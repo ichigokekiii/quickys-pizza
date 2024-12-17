@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicky's Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Script-->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-[Poppins] bg-gray-400 bg-center flex justify-center items-center min-h-[100vh]">
+
+    <!--header-->
+    <!--pa add naalng ako-->
+
+
+    <div id="container" class="container bg-white shadow-lg relative rounded-[25px] m-[20px] w-[850px] h-[570px] overflow-hidden">
+        <!--form-box login-->
+        <div id="form-box-log" class="bg-white rounded-[25px] absolute flex items-center text-center text-[#131318] right-0 w-[50%] p-[30px] h-[100%]">
+            <form action="" class="w-[100%]">
+                <!--Login-->
+                <h1 class="font-bold text-[36px] -my-[10px] mx-0">
+                    Login
+                </h1>
+                <div class="relative my-[30px]">
+                    <input class="placeholder-gray-400 text-base rounded-[8px] outline-none border-none w-[100%] pl-[13px] pr-[50px] pt-[13px] pb-[16px] bg-gray-100 text-[13px] text-[#131318] font-medium" type="text" placeholder="Username" required>
+                    <i class='bx bxs-user absolute text-[#131318] text-[20px] right-5 top-[50%] -translate-y-[50%]'></i>
+                </div>
+                <!--Password-->
+                <div class="relative my-[30px]">
+                    <input class="placeholder-gray-400 text-base rounded-[8px] outline-none border-none w-[100%] pl-[13px] pr-[50px] pt-[13px] pb-[16px] bg-gray-100 text-[13px] text-[#131318] font-medium" type="text" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt absolute text-[#131318] text-[20px] right-5 top-[50%] -translate-y-[50%]'></i>
+                </div>
+                <!--Forgot link-->
+                <div class="-my-[15px] mb-[15px]">
+                    <a href="#" class="text-[14.5px] text-[#131318] decoration-none">Forgot Password</a>
+                </div>
+                <!--Button-->
+                <button type="submit" class="bg-orange-400 cursor-pointer border-none text-base text-[16px] text-[white] rounded-[8px] shadow-md w-[100%] h-[48px]">Login</button>
+                <!--Break Line-->
+                <p id="line-container" class="text-[14.5px] my-[15px]">
+                    <span id="line" class="inline-block bg-black h-[0.5px] w-[12px] align-middle"></span>
+                        <span id="text" class="align-middle inline-block py-2">OR</span>
+                    <span id="line" class="inline-block bg-black h-[0.5px] w-[12px] align-middle"></span>
+                </p>
+                <!--Socials ng ina mo-->
+                <div class="flex justify-center">
+                    <a href="#"><i class='bx bxl-facebook-circle inline-flex text-[24px] text-[#131318] decoration-none mx-[8px] p-[10px] border-[2px] rounded-[8px]'></i></a>
+                    <a href="#"><i class='bx bxl-google inline-flex text-[24px] text-[#131318] decoration-none mx-[8px] p-[10px] border-[2px] rounded-[8px]'></i></a>
+                    <a href="#"><i class='bx bxl-apple inline-flex text-[24px] text-[#131318] decoration-none mx-[8px] p-[10px] border-[2px] rounded-[8px]'></i></a>                
+                </div>
+            </form>
+        </div>
+
+        <!--form-box register-->
+        <div id="form-box-reg" class="invisible bg-white rounded-[25px] absolute flex items-center text-center text-[#131318] right-0 w-[50%] p-[30px] h-[100%]">
+            <form action="" class="w-[100%]">
+                <!--Register-->
+                <h1 class="font-bold text-[36px] -my-[10px] mx-0">
+                    Register
+                </h1>
+                <div class="relative my-[30px]">
+                    <input class="placeholder-gray-400 text-base rounded-[8px] outline-none border-none w-[100%] pl-[13px] pr-[50px] pt-[13px] pb-[16px] bg-gray-100 text-[13px] text-[#131318] font-medium" type="text" placeholder="Username" required>
+                    <i class='bx bxs-user absolute text-[#131318] text-[20px] right-5 top-[50%] -translate-y-[50%]'></i>
+                </div>
+                <div class="relative my-[30px]">
+                    <input class="placeholder-gray-400 text-base rounded-[8px] outline-none border-none w-[100%] pl-[13px] pr-[50px] pt-[13px] pb-[16px] bg-gray-100 text-[13px] text-[#131318] font-medium" type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope absolute text-[#131318] text-[20px] right-5 top-[50%] -translate-y-[50%]'></i>
+                </div>
+                <!--Password-->
+                <div class="relative my-[30px]">
+                    <input class="placeholder-gray-400 text-base rounded-[8px] outline-none border-none w-[100%] pl-[13px] pr-[50px] pt-[13px] pb-[16px] bg-gray-100 text-[13px] text-[#131318] font-medium" type="text" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt absolute text-[#131318] text-[20px] right-5 top-[50%] -translate-y-[50%]'></i>
+                </div>
+                <!--Button-->
+                <button type="submit" class="bg-orange-400 cursor-pointer border-none text-base text-[16px] text-[white] rounded-[8px] shadow-md w-[100%] h-[48px]">Register</button>
+                <!--Break Line-->
+                <p id="line-container" class="text-[14.5px] my-[15px]">
+                    <span id="line" class="inline-block bg-black h-[0.5px] w-[12px] align-middle"></span>
+                        <span id="text" class="align-middle inline-block py-2">OR</span>
+                    <span id="line" class="inline-block bg-black h-[0.5px] w-[12px] align-middle"></span>
+                </p>
+                <!--Socials ng ina mo-->
+                <div class="flex justify-center">
+                    <a href="#"><i class='bx bxl-facebook-circle inline-flex text-[24px] text-[#131318] decoration-none mx-[8px] p-[10px] border-[2px] rounded-[8px]'></i></a>
+                    <a href="#"><i class='bx bxl-google inline-flex text-[24px] text-[#131318] decoration-none mx-[8px] p-[10px] border-[2px] rounded-[8px]'></i></a>
+                    <a href="#"><i class='bx bxl-apple inline-flex text-[24px] text-[#131318] decoration-none mx-[8px] p-[10px] border-[2px] rounded-[8px]'></i></a>                
+                </div>
+            </form>
+        </div>
+
+        <!--Toggle Box-->
+        <div id="toggle-box" class="absolute w-full h-full before:ease-in-out before:duration-[1.4s] before:rounded-[150px] before:left-[-250%] before:content-[''] before:absolute before:w-[300%] before:h-[100%] before:bg-[#5F9C3F]">
+            <!--Toggle Left panel-->
+            <div id="toggle-left-panel" class="absolute flex flex-col justify-center items-center w-[50%] h-[100%] left-0 text-white ease-in-out duration-[0.6s] delay-[0.7s]">
+                <h1 class="font-bold text-[36px] -my-[10px] mx-0">Hello, Welcome!</h1>
+                <p class="m-[20px]">Don't have an account?</p>
+                <!--Register buttn 2-->
+                <button id="toggle-register-btn" class="bg-orange-400 shadow-lg cursor-pointer text-base text-[16px] text-[white] rounded-[8px] w-[160px] h-[46px]">Register</button>
+            </div>
+            <!--Toggle Right panel-->
+            <div id="toggle-right-panel" class="absolute flex flex-col -right-[50%] justify-center items-center w-[50%] h-[100%] text-white ease-in-out duration-[0.6s] delay-[0.3s]">
+                <h1 class="font-bold text-[36px] -my-[10px] mx-0">Welcome Back!</h1>
+                <p class="m-[20px]">Already have an account?</p>
+                <!--Login buttn 2-->
+                <button id="toggle-login-btn" class="bg-orange-400 shadow-lg cursor-pointer text-base text-[16px] text-[white] rounded-[8px] w-[160px] h-[46px]">Login</button>
+            </div>
+        </div>
+        
+    </div>
+
+<script src="login.js"></script>
+</body>
+</html>
