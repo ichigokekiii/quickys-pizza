@@ -1401,11 +1401,17 @@ video {
   transition-delay: .7s;
 }
 
+#form-box-reg{
+  transition:  0.8s ease-in-out 0.7s, visibility 0s 0.9s;
+}
+
+#form-box-log{
+  transition:  0.8s ease-in-out 0.7s, visibility 0s 0.9s;
+}
 
 #container.active #form-box-reg {
   right: 50%;
   visibility: visible;
-
 }
 
 #container.active #form-box-log {
