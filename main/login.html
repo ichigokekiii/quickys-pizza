@@ -17,7 +17,7 @@
 </head>
 <body class="font-[Poppins] bg-gray-400 bg-center flex justify-center items-center min-h-[100vh]">
 
-    <div class="container bg-white shadow-lg relative rounded-[30px] w-[850px] h-[570px]">
+    <div class="container bg-white shadow-lg relative rounded-[30px] w-[850px] h-[570px] <!--overflow-hidden-->">
         <!--form-box login-->
         <div class="absolute flex items-center text-center z-10 text-[#131318] right-0 w-[50%] p-[30px] h-[100%]">
             <form action="" class="w-[100%]">
@@ -93,13 +93,20 @@
         </div>
 
         <!--Toggle Box-->
-        <div class="absolute w-[100%] h-[100%]">
-            <!--Toggle panel and Left panel-->
-            <div class="absolute flex flex-col justify-center items-center w-[50%] h-[100%] text-white bg-green-600">
-                <h1>TESTESTSETSETSETS</h1>
-                <p>Don't have an account?</p>
+        <div class="absolute w-[100%] h-[100%] before:rounded-[150px] before:z-20 before:left-[-250%] before:content-[''] before:absolute before:w-[300%] before:h-[100%] before:bg-black">
+            <!--Toggle Left panel-->
+            <div class="absolute flex z-20 flex-col justify-center items-center w-[50%] h-[100%] text-white">
+                <h1 class="font-bold text-[36px] -my-[10px] mx-0">Hello, Welcome!</h1>
+                <p class="m-[20px]">Don't have an account?</p>
                 <!--Register buttn 2-->
-                <button class="bg-orange-400 cursor-pointer border-none text-base text-[16px] text-[white] rounded-[8px] shadow-md w-[100%] h-[48px]">Register</button>
+                <button class="bg-transparent cursor-pointer text-base text-[16px] border-2 border-white text-[white] rounded-[8px] w-[160px] h-[46px]">Register</button>
+            </div>
+            <!--Toggle Right panel-->
+            <div class="absolute flex z-20 flex-col -right-[50%] justify-center items-center w-[50%] h-[100%] text-white">
+                <h1 class="font-bold text-[36px] -my-[10px] mx-0">Welcome Back!</h1>
+                <p class="m-[20px]">Already have an account?</p>
+                <!--Register buttn 2-->
+                <button class="bg-transparent cursor-pointer text-base text-[16px] border-2 border-white text-[white] rounded-[8px] w-[160px] h-[46px]">Login</button>
             </div>
         </div>
         
