@@ -23,7 +23,7 @@
                 <div>
                     <img class="w-32" src="/Pictures/Web Logo.png" alt="Quicky's Pizza Logo">
                 </div>
-                <!-- Media query para sa large screens -->
+                <!-- Media query for large screens -->
                 <ul class="hidden md:flex items-center gap-[4vw] text-white font-semibold">
                     <li><a class="hover:text-[#FF8416]" href="index.html">Home</a></li>
                     <li><a class="hover:text-[#FF8416]" href="about.html">About</a></li>
@@ -34,7 +34,7 @@
                 <a href="login.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">
                     Log In
                 </a>
-                <!-- Borgir -->
+                <!-- Burger Menu -->
                 <button id="menuButton" class="md:hidden flex flex-col justify-between w-8 h-8 focus:outline-none">
                     <span class="block w-full h-1 bg-white transition-transform"></span>
                     <span class="block w-full h-1 bg-white transition-transform"></span>
@@ -43,7 +43,7 @@
             </nav>
         </header>
     
-        <!-- Dropdown Menu -->
+        <!-- Dropdown Menu for Mobile -->
         <div id="menuDropdown" class="fixed inset-0 bg-[#005200] text-white flex flex-col items-center justify-center hidden">
             <button id="closeButton" class="absolute top-6 right-6 text-white text-3xl focus:outline-none">
                 &times;
@@ -56,24 +56,25 @@
                 <li><a class="hover:text-[#FF8416]" href="reservations.html">Reservations</a></li>
             </ul>
         </div>
-    
     </div>
 
-    <!--Menu Category-->
-    <div>
-        <div class="flex justify-center flex-wrap mx-100 my-30 gap-[12px] pt-[100px]">
-            <a href="menu.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">NEW DEALS</a>
-            <a href="menu1.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">PIZZAS</a>
-            <a href="menu2.html"  class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">MEALS</a>
-            <a href="menu3.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">BURGERS</a>
+    <!-- Menu Category & Menu Selection Section (Same Section) -->
+    <section class="min-h-screen bg-cover bg-center bg-[#005200] flex flex-col items-center justify-start px-4 contrast-150" style="background-image: url('/Pictures/PIZZA-BACKGROUND.png');">
+        <!-- Menu Category -->
+        <div>
+            <div class="flex justify-center flex-wrap mx-100 my-30 gap-[12px] pt-[100px]">
+                <a href="menu.html"  class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">NEW DEALS</a>
+                <a href="menu1.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">PIZZAS</a>
+                <a href="menu2.html"  class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">MEALS</a>
+                <a href="menu3.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">BURGERS</a>
+            </div>
+            <div class="flex justify-center flex-wrap mx-100 my-30 gap-[12px] pt-[40px]">
+                <a href="menu4.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">PASTA</a>
+                <a href="menu5.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">SNACKS</a>
+                <a href="menu6.html"  class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">DRINKS</a>
+                <a href="menu7.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">DESSERTS</a>
+            </div>
         </div>
-        <div class="flex justify-center flex-wrap mx-100 my-30 gap-[12px] pt-[40px]">
-            <a href="menu4.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">PASTA</a>
-            <a href="menu5.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">SNACKS</a>
-            <a href="menu6.html"  class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">DRINKS</a>
-            <a href="menu7.html" class="bg-white text-[#005200] font-bold px-4 py-2 rounded-full hover:bg-[#FF8416] hover:text-white transition shadow-md">DESSERTS</a>
-        </div>
-    </div>
 
     <!--Menu Selection-->
     <div class="flex justify-center flex-wrap mx-100 my-30 gap-[12px] pt-[100px]">
